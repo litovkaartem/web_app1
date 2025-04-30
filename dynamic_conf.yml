@@ -1,0 +1,11 @@
+http:
+  routers:
+    myapp-router:
+      rule: "PathPrefix(`/`)"
+      service: "myapp-service"
+  
+  services:
+    myapp-service:
+      loadBalancer:
+        servers:
+          - url: "http://87.228.81.197:8000"
