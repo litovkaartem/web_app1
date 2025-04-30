@@ -1,0 +1,7 @@
+services:
+  horilla-app:
+    image: horilla
+    container_name: horilla-app
+    ports:
+      - "8000:8000"
+    
